@@ -79,7 +79,7 @@
                     <div class="text-lg text-white" v-if="reviews.length === 0">
                         No review yet
                     </div>
-                    <div class="mb-8 text-white" v-for="(review, index) in reviews" :key="index">
+                    <div class="mb-8 text-white" v-for="(review, index) in getReviews" :key="index">
                         <div class="flex mb-4 items-center">
                             <div class="w-12 mr-4">
                                 <img class="w-full h-12 object-cover rounded-full" :src="getAuthorImage(review.author_details.avatar_path)" alt="">
@@ -95,6 +95,10 @@
                             {{review.content.substr(0,250)}}
                         </div>
                     </div>
+                    <div class="text-lg text-white" v-if="reviews.length > 4 && showAllComment===false">
+                        <span class="underline cursor-pointer" @click="showAllComment=true">See more</span>
+                    </div>
+
                 </div>
                 <div class="w-1/2 px-4">
                     <h3 class="text-xl text-yellow-400 uppercase mb-6 flex items-center">
@@ -123,6 +127,11 @@
     export default {
         name: "MovieDetails",
         props: ['movie', 'reviews', 'similars'],
+        data() {
+            return {
+                showAllComment: false
+            }
+        },
         methods:{
             getAuthorImage(img){
                 if (img){
@@ -133,6 +142,15 @@
                     }
                 }else{
                     return 'https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png'
+                }
+            }
+        },
+        computed:{
+            getReviews(){
+                if(this.showAllComment || this.reviews.length <= 4){
+                    return this.reviews
+                }else{
+                    return this.reviews.slice(0,4)
                 }
             }
         }
