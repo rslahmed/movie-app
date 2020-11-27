@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="97ff4cd9-1122-4659-9faa-1087ea4d34b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +179,9 @@
       <workItem from="1606322637376" duration="6653000" />
       <workItem from="1606368660612" duration="3795000" />
       <workItem from="1606401700871" duration="10170000" />
-      <workItem from="1606450461472" duration="3023000" />
+      <workItem from="1606450461472" duration="4441000" />
+      <workItem from="1606494572402" duration="370000" />
+      <workItem from="1606496337748" duration="116000" />
     </task>
     <task id="LOCAL-00001" summary="Procfile added">
       <created>1606455864941</created>
@@ -195,7 +197,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606456691849</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Procfile added">
+      <created>1606456944015</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606456944015</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Procfile added">
+      <created>1606457132150</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606457132150</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,22 +226,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="532" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606454770553" />
-    <state x="393" y="5" key="CommitChangelistDialog2" timestamp="1606456943030">
+    <state x="393" y="5" key="CommitChangelistDialog2" timestamp="1606457131127">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="5" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606456943030" />
-    <state x="361" y="134" key="Vcs.Push.Dialog.v2" timestamp="1606456958116">
+    <state x="393" y="5" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606457131127" />
+    <state x="361" y="134" key="Vcs.Push.Dialog.v2" timestamp="1606457133104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="134" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606456958116" />
+    <state x="361" y="134" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606457133104" />
     <state x="463" y="144" width="611" height="536" key="find.popup" timestamp="1606417083164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="463" y="144" width="611" height="536" key="find.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606417083164" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606450766371">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1606496370703">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606450766371" />
-    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605938067332" />
+    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606496370703" />
   </component>
 </project>

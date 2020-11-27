@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Routing\UrlGenerator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // Force HTTPS when REDIRECT_HTTPS=true in .env
+        if (env('REDIRECT_HTTPS')) {
+            $this->app['request']->server->set('HTTPS', true);
+        }
     }
 
     /**
@@ -21,8 +25,11 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(UrlGenerator $urlGenerator)
     {
-        //
+        // Force HTTPS when REDIRECT_HTTPS=true in .env
+        if (env('REDIRECT_HTTPS')) {
+            $urlGenerator->formatScheme('https');
+        }
     }
 }
